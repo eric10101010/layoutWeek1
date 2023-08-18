@@ -43,6 +43,9 @@ q:before, q:after {
     content: '';
     content: none;
 }
+a {
+    text-decoration: none;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -77,23 +80,18 @@ img {
 }
 /*--section2--*/
 .introText {
-    /* display: flex;
-    align-items: center; */
-    height: 432px;
     background-color: #EFEFEF;
 }
-.introText h3 {
-    width: 636px;
-    font-size: 32px;
-}
 .introBox {
-    height: 432px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    width: 636px;
+    margin-left: auto;
+}
+.introText p {
+    font-size: 32px;
+    padding: 48px 0;
 }
 /*--section3--*/
-.introName h4 , .introEducation h4, .introWork h4, .introAwards h4{
+.introBox h4{
     width: 50%;
     color: #AE0000;
     font-size: 40px;
@@ -103,6 +101,14 @@ img {
 }
 .introName p , .introEducation p, .introWork p , .introAwards p{
     font-size: 24px;
+}
+.introName a {
+    font-size: 24px;
+    color: #000;
+}
+.introName a:hover{
+    color: #AE0000;
+    transition: .4s;
 }
 .introEducation p, .introAwards p {
     width: 636px;
@@ -114,16 +120,19 @@ img {
 }
 /*--footer--*/
 .footer {
-    height: 192px;
     background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
-.socialIcon {
-    display: flex;
+.footerIcon {
+    display: inline-block;
+    text-align: center;
+    padding: 64px 0;
 }
-.socialIcon Img{
+.footerIcon:hover{
+    opacity: .5;
+    transition: .4s;
+}
+.footerIcon Img{
     width: 64px;
     height: 64px;
 }
